@@ -228,7 +228,7 @@
                dataApplyCompletion:^bool(bool done, int error, dispatch_data_t region, size_t offset, const void *buffer, size_t size) {
                    readSize += size;
                    
-                   dataApplyCompletion(buffer, size, NO);
+                   dataApplyCompletion(buffer, size, false);
                    
                    if (done && error == 0 && readSize >= dataSize){
                        dataApplyCompletion(NULL, 0, true);
