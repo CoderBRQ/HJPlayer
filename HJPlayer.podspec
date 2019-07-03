@@ -14,8 +14,6 @@ Pod::Spec.new do |s|
   s.author             = { "brq" => "brqmail@163.com" }
   s.social_media_url   = "http://www.hibrq.com"
 
-  s.platform     = :ios
-  s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/CoderBRQ/HJPlayer.git", :tag => "#{s.version}" }

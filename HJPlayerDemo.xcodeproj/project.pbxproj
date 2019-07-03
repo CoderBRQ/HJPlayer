@@ -191,10 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				637C2E2C22CCF7B200D18513 /* HJCacheConfig.h */,
+				637C2E3022CCF7B200D18513 /* HJCacheConfig.m */,
+				637C2E2F22CCF7B200D18513 /* HJCache.h */,
 				637C2E2D22CCF7B200D18513 /* HJCache.m */,
 				637C2E2E22CCF7B200D18513 /* HJDiskCache.h */,
-				637C2E2F22CCF7B200D18513 /* HJCache.h */,
-				637C2E3022CCF7B200D18513 /* HJCacheConfig.m */,
 				637C2E3122CCF7B200D18513 /* HJDiskCache.m */,
 			);
 			path = Cache;
