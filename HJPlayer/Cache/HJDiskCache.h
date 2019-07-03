@@ -12,7 +12,7 @@
 
 typedef void(^WriteDataCompletionBlock)(bool done, int error);
 typedef void(^IOReadCompletionBlock)(bool done, dispatch_data_t data, int error);
-typedef BOOL(^DataApplyCompletionBlock)(bool done, int error, dispatch_data_t region,
+typedef bool(^DataApplyCompletionBlock)(bool done, int error, dispatch_data_t region,
                                           size_t offset, const void *buffer, size_t size);
 
 @protocol HJDiskCache <NSObject>
