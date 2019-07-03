@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
   s.name         = "HJPlayer"
   s.version      = "0.0.1"
-  s.summary      = "AVPlayer play and cache."
+  s.summary      = "HJPlayer play and cache."
 
   s.description  = 'This library provides a singleton for cache data with support for remote '      \
                   'data coming from the web.'
