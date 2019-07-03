@@ -231,7 +231,7 @@
                    dataApplyCompletion(buffer, size, NO);
                    
                    if (done && error == 0 && readSize >= dataSize){
-                       dataApplyCompletion(NULL, 0, YES);
+                       dataApplyCompletion(NULL, 0, true);
                        return false;
                    }
                    
