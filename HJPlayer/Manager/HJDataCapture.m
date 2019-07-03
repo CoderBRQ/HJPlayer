@@ -11,6 +11,7 @@
 #import "HJPlayerDownloader.h"
 #import "HJCache.h"
 #import "HJInternalMacors.h"
+#import <CoreServices/CoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
 typedef NSMapTable<NSURLRequest *, id> HJLoadingRequestMapTable;

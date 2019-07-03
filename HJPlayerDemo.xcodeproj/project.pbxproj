@@ -204,9 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				637C2E3322CCF7B200D18513 /* HJPlayerDownloader.h */,
-				637C2E3422CCF7B200D18513 /* HJPlayerDownloaderOperation.m */,
 				637C2E3522CCF7B200D18513 /* HJPlayerDownloader.m */,
 				637C2E3622CCF7B200D18513 /* HJPlayerDownloaderOperation.h */,
+				637C2E3422CCF7B200D18513 /* HJPlayerDownloaderOperation.m */,
 			);
 			path = Downloader;
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				637C2E3B22CCF7B200D18513 /* HJAudioPlayerManager.h */,
-				637C2E3C22CCF7B200D18513 /* HJDataCapture.m */,
 				637C2E3D22CCF7B200D18513 /* HJAudioPlayerManager.m */,
 				637C2E3E22CCF7B200D18513 /* HJDataCapture.h */,
+				637C2E3C22CCF7B200D18513 /* HJDataCapture.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -249,8 +249,8 @@
 		637C2E4822CCF7B200D18513 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				637C2E4922CCF7B200D18513 /* HJApplication.m */,
 				637C2E4A22CCF7B200D18513 /* HJApplication.h */,
+				637C2E4922CCF7B200D18513 /* HJApplication.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
