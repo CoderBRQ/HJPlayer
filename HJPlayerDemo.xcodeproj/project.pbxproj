@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		637C2DC822CCAE2400D18513 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DC722CCAE2400D18513 /* AppDelegate.m */; };
+		637C2DCB22CCAE2400D18513 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DCA22CCAE2400D18513 /* ViewController.m */; };
+		637C2DCE22CCAE2400D18513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637C2DCC22CCAE2400D18513 /* Main.storyboard */; };
+		637C2DD022CCAE2600D18513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637C2DCF22CCAE2600D18513 /* Assets.xcassets */; };
+		637C2DD322CCAE2600D18513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637C2DD122CCAE2600D18513 /* LaunchScreen.storyboard */; };
+		637C2DD622CCAE2600D18513 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DD522CCAE2600D18513 /* main.m */; };
+		637C2E0D22CCAE3700D18513 /* HJCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DED22CCAE3700D18513 /* HJCache.m */; };
+		637C2E0E22CCAE3700D18513 /* HJCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF022CCAE3700D18513 /* HJCacheConfig.m */; };
+		637C2E0F22CCAE3700D18513 /* HJDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF122CCAE3700D18513 /* HJDiskCache.m */; };
+		637C2E1022CCAE3700D18513 /* HJPlayerDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */; };
+		637C2E1122CCAE3700D18513 /* HJPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */; };
+		637C2E1222CCAE3700D18513 /* HJPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF822CCAE3700D18513 /* HJPlayerModel.m */; };
+		637C2E1322CCAE3700D18513 /* HJDataCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DFC22CCAE3700D18513 /* HJDataCapture.m */; };
+		637C2E1422CCAE3700D18513 /* HJAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */; };
+		637C2E1522CCAE3700D18513 /* HJInternalMacors.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0122CCAE3700D18513 /* HJInternalMacors.m */; };
+		637C2E1622CCAE3700D18513 /* HJPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */; };
+		637C2E1722CCAE3700D18513 /* HJPlayerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0622CCAE3700D18513 /* HJPlayerError.m */; };
+		637C2E1822CCAE3700D18513 /* HJApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0922CCAE3700D18513 /* HJApplication.m */; };
+		637C2E1C22CCAE9100D18513 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637C2E1922CCAE9000D18513 /* ListView.xib */; };
+		637C2E1D22CCAE9100D18513 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E1B22CCAE9100D18513 /* ListView.m */; };
+		637C2E2022CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 637C2E1F22CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 */; };
+		637C2E2622CCAEE000D18513 /* HJCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2122CCAEDF00D18513 /* HJCacheTests.m */; };
+		637C2E2722CCAEE000D18513 /* HJPlayerDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2222CCAEDF00D18513 /* HJPlayerDownloaderTests.m */; };
+		637C2E2822CCAEE000D18513 /* HJTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2322CCAEDF00D18513 /* HJTestCase.m */; };
+		637C2E2922CCAEE000D18513 /* HJAudioPlayerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2522CCAEDF00D18513 /* HJAudioPlayerManagerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		637C2DDC22CCAE2600D18513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637C2DBB22CCAE2400D18513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637C2DC222CCAE2400D18513;
+			remoteInfo = HJPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		637C2DC322CCAE2400D18513 /* HJPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		637C2DC622CCAE2400D18513 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		637C2DC722CCAE2400D18513 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		637C2DC922CCAE2400D18513 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		637C2DCA22CCAE2400D18513 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		637C2DCD22CCAE2400D18513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		637C2DCF22CCAE2600D18513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		637C2DD222CCAE2600D18513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		637C2DD422CCAE2600D18513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637C2DD522CCAE2600D18513 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		637C2DDB22CCAE2600D18513 /* HJPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		637C2DE122CCAE2600D18513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637C2DEC22CCAE3700D18513 /* HJCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCacheConfig.h; sourceTree = "<group>"; };
+		637C2DED22CCAE3700D18513 /* HJCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCache.m; sourceTree = "<group>"; };
+		637C2DEE22CCAE3700D18513 /* HJDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDiskCache.h; sourceTree = "<group>"; };
+		637C2DEF22CCAE3700D18513 /* HJCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCache.h; sourceTree = "<group>"; };
+		637C2DF022CCAE3700D18513 /* HJCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCacheConfig.m; sourceTree = "<group>"; };
+		637C2DF122CCAE3700D18513 /* HJDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDiskCache.m; sourceTree = "<group>"; };
+		637C2DF322CCAE3700D18513 /* HJPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloader.h; sourceTree = "<group>"; };
+		637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloaderOperation.m; sourceTree = "<group>"; };
+		637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloader.m; sourceTree = "<group>"; };
+		637C2DF622CCAE3700D18513 /* HJPlayerDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloaderOperation.h; sourceTree = "<group>"; };
+		637C2DF822CCAE3700D18513 /* HJPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerModel.m; sourceTree = "<group>"; };
+		637C2DF922CCAE3700D18513 /* HJPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerModel.h; sourceTree = "<group>"; };
+		637C2DFB22CCAE3700D18513 /* HJAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAudioPlayerManager.h; sourceTree = "<group>"; };
+		637C2DFC22CCAE3700D18513 /* HJDataCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCapture.m; sourceTree = "<group>"; };
+		637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioPlayerManager.m; sourceTree = "<group>"; };
+		637C2DFE22CCAE3700D18513 /* HJDataCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCapture.h; sourceTree = "<group>"; };
+		637C2E0022CCAE3700D18513 /* HJDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDebugLog.h; sourceTree = "<group>"; };
+		637C2E0122CCAE3700D18513 /* HJInternalMacors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJInternalMacors.m; sourceTree = "<group>"; };
+		637C2E0222CCAE3700D18513 /* HJPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerCompat.h; sourceTree = "<group>"; };
+		637C2E0322CCAE3700D18513 /* HJPlayerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerError.h; sourceTree = "<group>"; };
+		637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerCompat.m; sourceTree = "<group>"; };
+		637C2E0522CCAE3700D18513 /* HJInternalMacors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJInternalMacors.h; sourceTree = "<group>"; };
+		637C2E0622CCAE3700D18513 /* HJPlayerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerError.m; sourceTree = "<group>"; };
+		637C2E0722CCAE3700D18513 /* HJPlayerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerOperation.h; sourceTree = "<group>"; };
+		637C2E0922CCAE3700D18513 /* HJApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJApplication.m; sourceTree = "<group>"; };
+		637C2E0A22CCAE3700D18513 /* HJApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJApplication.h; sourceTree = "<group>"; };
+		637C2E0C22CCAE3700D18513 /* HJPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayer.h; sourceTree = "<group>"; };
+		637C2E1922CCAE9000D18513 /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
+		637C2E1A22CCAE9100D18513 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		637C2E1B22CCAE9100D18513 /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
+		637C2E1F22CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0eadcb58644925cc3478541cac468995.mp3; sourceTree = "<group>"; };
+		637C2E2122CCAEDF00D18513 /* HJCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCacheTests.m; sourceTree = "<group>"; };
+		637C2E2222CCAEDF00D18513 /* HJPlayerDownloaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloaderTests.m; sourceTree = "<group>"; };
+		637C2E2322CCAEDF00D18513 /* HJTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTestCase.m; sourceTree = "<group>"; };
+		637C2E2422CCAEDF00D18513 /* HJTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTestCase.h; sourceTree = "<group>"; };
+		637C2E2522CCAEDF00D18513 /* HJAudioPlayerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioPlayerManagerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637C2DC022CCAE2400D18513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637C2DD822CCAE2600D18513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637C2DBA22CCAE2400D18513 = {
+			isa = PBXGroup;
+			children = (
+				637C2DC522CCAE2400D18513 /* HJPlayerDemo */,
+				637C2DDE22CCAE2600D18513 /* HJPlayerDemoTests */,
+				637C2DC422CCAE2400D18513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637C2DC422CCAE2400D18513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DC322CCAE2400D18513 /* HJPlayerDemo.app */,
+				637C2DDB22CCAE2600D18513 /* HJPlayerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637C2DC522CCAE2400D18513 /* HJPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DEA22CCAE3700D18513 /* HJPlayer */,
+				637C2DC622CCAE2400D18513 /* AppDelegate.h */,
+				637C2DC722CCAE2400D18513 /* AppDelegate.m */,
+				637C2DC922CCAE2400D18513 /* ViewController.h */,
+				637C2DCA22CCAE2400D18513 /* ViewController.m */,
+				637C2E1A22CCAE9100D18513 /* ListView.h */,
+				637C2E1B22CCAE9100D18513 /* ListView.m */,
+				637C2E1922CCAE9000D18513 /* ListView.xib */,
+				637C2DCC22CCAE2400D18513 /* Main.storyboard */,
+				637C2DCF22CCAE2600D18513 /* Assets.xcassets */,
+				637C2DD122CCAE2600D18513 /* LaunchScreen.storyboard */,
+				637C2DD422CCAE2600D18513 /* Info.plist */,
+				637C2DD522CCAE2600D18513 /* main.m */,
+			);
+			path = HJPlayerDemo;
+			sourceTree = "<group>";
+		};
+		637C2DDE22CCAE2600D18513 /* HJPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E1E22CCAEBF00D18513 /* Resource */,
+				637C2DE122CCAE2600D18513 /* Info.plist */,
+				637C2E2522CCAEDF00D18513 /* HJAudioPlayerManagerTests.m */,
+				637C2E2122CCAEDF00D18513 /* HJCacheTests.m */,
+				637C2E2222CCAEDF00D18513 /* HJPlayerDownloaderTests.m */,
+				637C2E2422CCAEDF00D18513 /* HJTestCase.h */,
+				637C2E2322CCAEDF00D18513 /* HJTestCase.m */,
+			);
+			path = HJPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		637C2DEA22CCAE3700D18513 /* HJPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DEB22CCAE3700D18513 /* Cache */,
+				637C2DF222CCAE3700D18513 /* Downloader */,
+				637C2DF722CCAE3700D18513 /* Models */,
+				637C2DFA22CCAE3700D18513 /* Manager */,
+				637C2DFF22CCAE3700D18513 /* HJUtils */,
+				637C2E0822CCAE3700D18513 /* Application */,
+				637C2E0B22CCAE3700D18513 /* Player */,
+			);
+			path = HJPlayer;
+			sourceTree = "<group>";
+		};
+		637C2DEB22CCAE3700D18513 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DEC22CCAE3700D18513 /* HJCacheConfig.h */,
+				637C2DED22CCAE3700D18513 /* HJCache.m */,
+				637C2DEE22CCAE3700D18513 /* HJDiskCache.h */,
+				637C2DEF22CCAE3700D18513 /* HJCache.h */,
+				637C2DF022CCAE3700D18513 /* HJCacheConfig.m */,
+				637C2DF122CCAE3700D18513 /* HJDiskCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		637C2DF222CCAE3700D18513 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DF322CCAE3700D18513 /* HJPlayerDownloader.h */,
+				637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */,
+				637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */,
+				637C2DF622CCAE3700D18513 /* HJPlayerDownloaderOperation.h */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		637C2DF722CCAE3700D18513 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DF822CCAE3700D18513 /* HJPlayerModel.m */,
+				637C2DF922CCAE3700D18513 /* HJPlayerModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		637C2DFA22CCAE3700D18513 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				637C2DFB22CCAE3700D18513 /* HJAudioPlayerManager.h */,
+				637C2DFC22CCAE3700D18513 /* HJDataCapture.m */,
+				637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */,
+				637C2DFE22CCAE3700D18513 /* HJDataCapture.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		637C2DFF22CCAE3700D18513 /* HJUtils */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E0022CCAE3700D18513 /* HJDebugLog.h */,
+				637C2E0122CCAE3700D18513 /* HJInternalMacors.m */,
+				637C2E0222CCAE3700D18513 /* HJPlayerCompat.h */,
+				637C2E0322CCAE3700D18513 /* HJPlayerError.h */,
+				637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */,
+				637C2E0522CCAE3700D18513 /* HJInternalMacors.h */,
+				637C2E0622CCAE3700D18513 /* HJPlayerError.m */,
+				637C2E0722CCAE3700D18513 /* HJPlayerOperation.h */,
+			);
+			path = HJUtils;
+			sourceTree = "<group>";
+		};
+		637C2E0822CCAE3700D18513 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E0922CCAE3700D18513 /* HJApplication.m */,
+				637C2E0A22CCAE3700D18513 /* HJApplication.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		637C2E0B22CCAE3700D18513 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E0C22CCAE3700D18513 /* HJPlayer.h */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		637C2E1E22CCAEBF00D18513 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E1F22CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637C2DC222CCAE2400D18513 /* HJPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637C2DE422CCAE2600D18513 /* Build configuration list for PBXNativeTarget "HJPlayerDemo" */;
+			buildPhases = (
+				637C2DBF22CCAE2400D18513 /* Sources */,
+				637C2DC022CCAE2400D18513 /* Frameworks */,
+				637C2DC122CCAE2400D18513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJPlayerDemo;
+			productName = HJPlayerDemo;
+			productReference = 637C2DC322CCAE2400D18513 /* HJPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		637C2DDA22CCAE2600D18513 /* HJPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637C2DE722CCAE2600D18513 /* Build configuration list for PBXNativeTarget "HJPlayerDemoTests" */;
+			buildPhases = (
+				637C2DD722CCAE2600D18513 /* Sources */,
+				637C2DD822CCAE2600D18513 /* Frameworks */,
+				637C2DD922CCAE2600D18513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637C2DDD22CCAE2600D18513 /* PBXTargetDependency */,
+			);
+			name = HJPlayerDemoTests;
+			productName = HJPlayerDemoTests;
+			productReference = 637C2DDB22CCAE2600D18513 /* HJPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637C2DBB22CCAE2400D18513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = bianrongqiang;
+				TargetAttributes = {
+					637C2DC222CCAE2400D18513 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					637C2DDA22CCAE2600D18513 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 637C2DC222CCAE2400D18513;
+					};
+				};
+			};
+			buildConfigurationList = 637C2DBE22CCAE2400D18513 /* Build configuration list for PBXProject "HJPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 637C2DBA22CCAE2400D18513;
+			productRefGroup = 637C2DC422CCAE2400D18513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637C2DC222CCAE2400D18513 /* HJPlayerDemo */,
+				637C2DDA22CCAE2600D18513 /* HJPlayerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637C2DC122CCAE2400D18513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C2E1C22CCAE9100D18513 /* ListView.xib in Resources */,
+				637C2DD322CCAE2600D18513 /* LaunchScreen.storyboard in Resources */,
+				637C2DD022CCAE2600D18513 /* Assets.xcassets in Resources */,
+				637C2DCE22CCAE2400D18513 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637C2DD922CCAE2600D18513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C2E2022CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637C2DBF22CCAE2400D18513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C2DCB22CCAE2400D18513 /* ViewController.m in Sources */,
+				637C2E0E22CCAE3700D18513 /* HJCacheConfig.m in Sources */,
+				637C2E1422CCAE3700D18513 /* HJAudioPlayerManager.m in Sources */,
+				637C2E1022CCAE3700D18513 /* HJPlayerDownloaderOperation.m in Sources */,
+				637C2DD622CCAE2600D18513 /* main.m in Sources */,
+				637C2E1722CCAE3700D18513 /* HJPlayerError.m in Sources */,
+				637C2E1522CCAE3700D18513 /* HJInternalMacors.m in Sources */,
+				637C2E0D22CCAE3700D18513 /* HJCache.m in Sources */,
+				637C2E1822CCAE3700D18513 /* HJApplication.m in Sources */,
+				637C2E1122CCAE3700D18513 /* HJPlayerDownloader.m in Sources */,
+				637C2E1322CCAE3700D18513 /* HJDataCapture.m in Sources */,
+				637C2E1222CCAE3700D18513 /* HJPlayerModel.m in Sources */,
+				637C2E1D22CCAE9100D18513 /* ListView.m in Sources */,
+				637C2DC822CCAE2400D18513 /* AppDelegate.m in Sources */,
+				637C2E0F22CCAE3700D18513 /* HJDiskCache.m in Sources */,
+				637C2E1622CCAE3700D18513 /* HJPlayerCompat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637C2DD722CCAE2600D18513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C2E2622CCAEE000D18513 /* HJCacheTests.m in Sources */,
+				637C2E2822CCAEE000D18513 /* HJTestCase.m in Sources */,
+				637C2E2722CCAEE000D18513 /* HJPlayerDownloaderTests.m in Sources */,
+				637C2E2922CCAEE000D18513 /* HJAudioPlayerManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		637C2DDD22CCAE2600D18513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637C2DC222CCAE2400D18513 /* HJPlayerDemo */;
+			targetProxy = 637C2DDC22CCAE2600D18513 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637C2DCC22CCAE2400D18513 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637C2DCD22CCAE2400D18513 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		637C2DD122CCAE2600D18513 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637C2DD222CCAE2600D18513 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637C2DE222CCAE2600D18513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		637C2DE322CCAE2600D18513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637C2DE522CCAE2600D18513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
+				INFOPLIST_FILE = HJPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hibrq.HJPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		637C2DE622CCAE2600D18513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
+				INFOPLIST_FILE = HJPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hibrq.HJPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		637C2DE822CCAE2600D18513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
+				INFOPLIST_FILE = HJPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hibrq.HJPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJPlayerDemo.app/HJPlayerDemo";
+			};
+			name = Debug;
+		};
+		637C2DE922CCAE2600D18513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
+				INFOPLIST_FILE = HJPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hibrq.HJPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJPlayerDemo.app/HJPlayerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637C2DBE22CCAE2400D18513 /* Build configuration list for PBXProject "HJPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637C2DE222CCAE2600D18513 /* Debug */,
+				637C2DE322CCAE2600D18513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637C2DE422CCAE2600D18513 /* Build configuration list for PBXNativeTarget "HJPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637C2DE522CCAE2600D18513 /* Debug */,
+				637C2DE622CCAE2600D18513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637C2DE722CCAE2600D18513 /* Build configuration list for PBXNativeTarget "HJPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637C2DE822CCAE2600D18513 /* Debug */,
+				637C2DE922CCAE2600D18513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637C2DBB22CCAE2400D18513 /* Project object */;
+}
