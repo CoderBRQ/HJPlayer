@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/CoderBRQ/HJPlayer.git", :tag => "#{s.version}" }
 
-  s.source_files  = "HJPlayer", "HJPlayer/*.{h,m}"
+  s.source_files  = "HJPlayer", "HJPlayer/*/*.{h,m}"
 
   s.requires_arc = true
 
