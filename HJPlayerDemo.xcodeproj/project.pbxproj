@@ -13,18 +13,6 @@
 		637C2DD022CCAE2600D18513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637C2DCF22CCAE2600D18513 /* Assets.xcassets */; };
 		637C2DD322CCAE2600D18513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637C2DD122CCAE2600D18513 /* LaunchScreen.storyboard */; };
 		637C2DD622CCAE2600D18513 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DD522CCAE2600D18513 /* main.m */; };
-		637C2E0D22CCAE3700D18513 /* HJCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DED22CCAE3700D18513 /* HJCache.m */; };
-		637C2E0E22CCAE3700D18513 /* HJCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF022CCAE3700D18513 /* HJCacheConfig.m */; };
-		637C2E0F22CCAE3700D18513 /* HJDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF122CCAE3700D18513 /* HJDiskCache.m */; };
-		637C2E1022CCAE3700D18513 /* HJPlayerDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */; };
-		637C2E1122CCAE3700D18513 /* HJPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */; };
-		637C2E1222CCAE3700D18513 /* HJPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DF822CCAE3700D18513 /* HJPlayerModel.m */; };
-		637C2E1322CCAE3700D18513 /* HJDataCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DFC22CCAE3700D18513 /* HJDataCapture.m */; };
-		637C2E1422CCAE3700D18513 /* HJAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */; };
-		637C2E1522CCAE3700D18513 /* HJInternalMacors.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0122CCAE3700D18513 /* HJInternalMacors.m */; };
-		637C2E1622CCAE3700D18513 /* HJPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */; };
-		637C2E1722CCAE3700D18513 /* HJPlayerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0622CCAE3700D18513 /* HJPlayerError.m */; };
-		637C2E1822CCAE3700D18513 /* HJApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E0922CCAE3700D18513 /* HJApplication.m */; };
 		637C2E1C22CCAE9100D18513 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637C2E1922CCAE9000D18513 /* ListView.xib */; };
 		637C2E1D22CCAE9100D18513 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E1B22CCAE9100D18513 /* ListView.m */; };
 		637C2E2022CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 637C2E1F22CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 */; };
@@ -32,6 +20,18 @@
 		637C2E2722CCAEE000D18513 /* HJPlayerDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2222CCAEDF00D18513 /* HJPlayerDownloaderTests.m */; };
 		637C2E2822CCAEE000D18513 /* HJTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2322CCAEDF00D18513 /* HJTestCase.m */; };
 		637C2E2922CCAEE000D18513 /* HJAudioPlayerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2522CCAEDF00D18513 /* HJAudioPlayerManagerTests.m */; };
+		637C2E4D22CCF7B200D18513 /* HJCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E2D22CCF7B200D18513 /* HJCache.m */; };
+		637C2E4E22CCF7B200D18513 /* HJCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3022CCF7B200D18513 /* HJCacheConfig.m */; };
+		637C2E4F22CCF7B200D18513 /* HJDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3122CCF7B200D18513 /* HJDiskCache.m */; };
+		637C2E5022CCF7B200D18513 /* HJPlayerDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3422CCF7B200D18513 /* HJPlayerDownloaderOperation.m */; };
+		637C2E5122CCF7B200D18513 /* HJPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3522CCF7B200D18513 /* HJPlayerDownloader.m */; };
+		637C2E5222CCF7B200D18513 /* HJPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3822CCF7B200D18513 /* HJPlayerModel.m */; };
+		637C2E5322CCF7B200D18513 /* HJDataCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3C22CCF7B200D18513 /* HJDataCapture.m */; };
+		637C2E5422CCF7B200D18513 /* HJAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E3D22CCF7B200D18513 /* HJAudioPlayerManager.m */; };
+		637C2E5522CCF7B200D18513 /* HJInternalMacors.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E4122CCF7B200D18513 /* HJInternalMacors.m */; };
+		637C2E5622CCF7B200D18513 /* HJPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E4422CCF7B200D18513 /* HJPlayerCompat.m */; };
+		637C2E5722CCF7B200D18513 /* HJPlayerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E4622CCF7B200D18513 /* HJPlayerError.m */; };
+		637C2E5822CCF7B200D18513 /* HJApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C2E4922CCF7B200D18513 /* HJApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,33 +57,6 @@
 		637C2DD522CCAE2600D18513 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		637C2DDB22CCAE2600D18513 /* HJPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637C2DE122CCAE2600D18513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		637C2DEC22CCAE3700D18513 /* HJCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCacheConfig.h; sourceTree = "<group>"; };
-		637C2DED22CCAE3700D18513 /* HJCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCache.m; sourceTree = "<group>"; };
-		637C2DEE22CCAE3700D18513 /* HJDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDiskCache.h; sourceTree = "<group>"; };
-		637C2DEF22CCAE3700D18513 /* HJCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCache.h; sourceTree = "<group>"; };
-		637C2DF022CCAE3700D18513 /* HJCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCacheConfig.m; sourceTree = "<group>"; };
-		637C2DF122CCAE3700D18513 /* HJDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDiskCache.m; sourceTree = "<group>"; };
-		637C2DF322CCAE3700D18513 /* HJPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloader.h; sourceTree = "<group>"; };
-		637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloaderOperation.m; sourceTree = "<group>"; };
-		637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloader.m; sourceTree = "<group>"; };
-		637C2DF622CCAE3700D18513 /* HJPlayerDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloaderOperation.h; sourceTree = "<group>"; };
-		637C2DF822CCAE3700D18513 /* HJPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerModel.m; sourceTree = "<group>"; };
-		637C2DF922CCAE3700D18513 /* HJPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerModel.h; sourceTree = "<group>"; };
-		637C2DFB22CCAE3700D18513 /* HJAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAudioPlayerManager.h; sourceTree = "<group>"; };
-		637C2DFC22CCAE3700D18513 /* HJDataCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCapture.m; sourceTree = "<group>"; };
-		637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioPlayerManager.m; sourceTree = "<group>"; };
-		637C2DFE22CCAE3700D18513 /* HJDataCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCapture.h; sourceTree = "<group>"; };
-		637C2E0022CCAE3700D18513 /* HJDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDebugLog.h; sourceTree = "<group>"; };
-		637C2E0122CCAE3700D18513 /* HJInternalMacors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJInternalMacors.m; sourceTree = "<group>"; };
-		637C2E0222CCAE3700D18513 /* HJPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerCompat.h; sourceTree = "<group>"; };
-		637C2E0322CCAE3700D18513 /* HJPlayerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerError.h; sourceTree = "<group>"; };
-		637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerCompat.m; sourceTree = "<group>"; };
-		637C2E0522CCAE3700D18513 /* HJInternalMacors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJInternalMacors.h; sourceTree = "<group>"; };
-		637C2E0622CCAE3700D18513 /* HJPlayerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerError.m; sourceTree = "<group>"; };
-		637C2E0722CCAE3700D18513 /* HJPlayerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerOperation.h; sourceTree = "<group>"; };
-		637C2E0922CCAE3700D18513 /* HJApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJApplication.m; sourceTree = "<group>"; };
-		637C2E0A22CCAE3700D18513 /* HJApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJApplication.h; sourceTree = "<group>"; };
-		637C2E0C22CCAE3700D18513 /* HJPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayer.h; sourceTree = "<group>"; };
 		637C2E1922CCAE9000D18513 /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
 		637C2E1A22CCAE9100D18513 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		637C2E1B22CCAE9100D18513 /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
@@ -93,6 +66,33 @@
 		637C2E2322CCAEDF00D18513 /* HJTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTestCase.m; sourceTree = "<group>"; };
 		637C2E2422CCAEDF00D18513 /* HJTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTestCase.h; sourceTree = "<group>"; };
 		637C2E2522CCAEDF00D18513 /* HJAudioPlayerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioPlayerManagerTests.m; sourceTree = "<group>"; };
+		637C2E2C22CCF7B200D18513 /* HJCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCacheConfig.h; sourceTree = "<group>"; };
+		637C2E2D22CCF7B200D18513 /* HJCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCache.m; sourceTree = "<group>"; };
+		637C2E2E22CCF7B200D18513 /* HJDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDiskCache.h; sourceTree = "<group>"; };
+		637C2E2F22CCF7B200D18513 /* HJCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCache.h; sourceTree = "<group>"; };
+		637C2E3022CCF7B200D18513 /* HJCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCacheConfig.m; sourceTree = "<group>"; };
+		637C2E3122CCF7B200D18513 /* HJDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDiskCache.m; sourceTree = "<group>"; };
+		637C2E3322CCF7B200D18513 /* HJPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloader.h; sourceTree = "<group>"; };
+		637C2E3422CCF7B200D18513 /* HJPlayerDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloaderOperation.m; sourceTree = "<group>"; };
+		637C2E3522CCF7B200D18513 /* HJPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerDownloader.m; sourceTree = "<group>"; };
+		637C2E3622CCF7B200D18513 /* HJPlayerDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerDownloaderOperation.h; sourceTree = "<group>"; };
+		637C2E3822CCF7B200D18513 /* HJPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerModel.m; sourceTree = "<group>"; };
+		637C2E3922CCF7B200D18513 /* HJPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerModel.h; sourceTree = "<group>"; };
+		637C2E3B22CCF7B200D18513 /* HJAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAudioPlayerManager.h; sourceTree = "<group>"; };
+		637C2E3C22CCF7B200D18513 /* HJDataCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCapture.m; sourceTree = "<group>"; };
+		637C2E3D22CCF7B200D18513 /* HJAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioPlayerManager.m; sourceTree = "<group>"; };
+		637C2E3E22CCF7B200D18513 /* HJDataCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCapture.h; sourceTree = "<group>"; };
+		637C2E4022CCF7B200D18513 /* HJDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDebugLog.h; sourceTree = "<group>"; };
+		637C2E4122CCF7B200D18513 /* HJInternalMacors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJInternalMacors.m; sourceTree = "<group>"; };
+		637C2E4222CCF7B200D18513 /* HJPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerCompat.h; sourceTree = "<group>"; };
+		637C2E4322CCF7B200D18513 /* HJPlayerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerError.h; sourceTree = "<group>"; };
+		637C2E4422CCF7B200D18513 /* HJPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerCompat.m; sourceTree = "<group>"; };
+		637C2E4522CCF7B200D18513 /* HJInternalMacors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJInternalMacors.h; sourceTree = "<group>"; };
+		637C2E4622CCF7B200D18513 /* HJPlayerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlayerError.m; sourceTree = "<group>"; };
+		637C2E4722CCF7B200D18513 /* HJPlayerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayerOperation.h; sourceTree = "<group>"; };
+		637C2E4922CCF7B200D18513 /* HJApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJApplication.m; sourceTree = "<group>"; };
+		637C2E4A22CCF7B200D18513 /* HJApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJApplication.h; sourceTree = "<group>"; };
+		637C2E4C22CCF7B200D18513 /* HJPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 		637C2DBA22CCAE2400D18513 = {
 			isa = PBXGroup;
 			children = (
+				637C2E2A22CCF7B200D18513 /* HJPlayer */,
 				637C2DC522CCAE2400D18513 /* HJPlayerDemo */,
 				637C2DDE22CCAE2600D18513 /* HJPlayerDemoTests */,
 				637C2DC422CCAE2400D18513 /* Products */,
@@ -134,7 +135,6 @@
 		637C2DC522CCAE2400D18513 /* HJPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				637C2DEA22CCAE3700D18513 /* HJPlayer */,
 				637C2DC622CCAE2400D18513 /* AppDelegate.h */,
 				637C2DC722CCAE2400D18513 /* AppDelegate.m */,
 				637C2DC922CCAE2400D18513 /* ViewController.h */,
@@ -165,102 +165,102 @@
 			path = HJPlayerDemoTests;
 			sourceTree = "<group>";
 		};
-		637C2DEA22CCAE3700D18513 /* HJPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				637C2DEB22CCAE3700D18513 /* Cache */,
-				637C2DF222CCAE3700D18513 /* Downloader */,
-				637C2DF722CCAE3700D18513 /* Models */,
-				637C2DFA22CCAE3700D18513 /* Manager */,
-				637C2DFF22CCAE3700D18513 /* HJUtils */,
-				637C2E0822CCAE3700D18513 /* Application */,
-				637C2E0B22CCAE3700D18513 /* Player */,
-			);
-			path = HJPlayer;
-			sourceTree = "<group>";
-		};
-		637C2DEB22CCAE3700D18513 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				637C2DEC22CCAE3700D18513 /* HJCacheConfig.h */,
-				637C2DED22CCAE3700D18513 /* HJCache.m */,
-				637C2DEE22CCAE3700D18513 /* HJDiskCache.h */,
-				637C2DEF22CCAE3700D18513 /* HJCache.h */,
-				637C2DF022CCAE3700D18513 /* HJCacheConfig.m */,
-				637C2DF122CCAE3700D18513 /* HJDiskCache.m */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		637C2DF222CCAE3700D18513 /* Downloader */ = {
-			isa = PBXGroup;
-			children = (
-				637C2DF322CCAE3700D18513 /* HJPlayerDownloader.h */,
-				637C2DF422CCAE3700D18513 /* HJPlayerDownloaderOperation.m */,
-				637C2DF522CCAE3700D18513 /* HJPlayerDownloader.m */,
-				637C2DF622CCAE3700D18513 /* HJPlayerDownloaderOperation.h */,
-			);
-			path = Downloader;
-			sourceTree = "<group>";
-		};
-		637C2DF722CCAE3700D18513 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				637C2DF822CCAE3700D18513 /* HJPlayerModel.m */,
-				637C2DF922CCAE3700D18513 /* HJPlayerModel.h */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		637C2DFA22CCAE3700D18513 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				637C2DFB22CCAE3700D18513 /* HJAudioPlayerManager.h */,
-				637C2DFC22CCAE3700D18513 /* HJDataCapture.m */,
-				637C2DFD22CCAE3700D18513 /* HJAudioPlayerManager.m */,
-				637C2DFE22CCAE3700D18513 /* HJDataCapture.h */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		637C2DFF22CCAE3700D18513 /* HJUtils */ = {
-			isa = PBXGroup;
-			children = (
-				637C2E0022CCAE3700D18513 /* HJDebugLog.h */,
-				637C2E0122CCAE3700D18513 /* HJInternalMacors.m */,
-				637C2E0222CCAE3700D18513 /* HJPlayerCompat.h */,
-				637C2E0322CCAE3700D18513 /* HJPlayerError.h */,
-				637C2E0422CCAE3700D18513 /* HJPlayerCompat.m */,
-				637C2E0522CCAE3700D18513 /* HJInternalMacors.h */,
-				637C2E0622CCAE3700D18513 /* HJPlayerError.m */,
-				637C2E0722CCAE3700D18513 /* HJPlayerOperation.h */,
-			);
-			path = HJUtils;
-			sourceTree = "<group>";
-		};
-		637C2E0822CCAE3700D18513 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				637C2E0922CCAE3700D18513 /* HJApplication.m */,
-				637C2E0A22CCAE3700D18513 /* HJApplication.h */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		637C2E0B22CCAE3700D18513 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				637C2E0C22CCAE3700D18513 /* HJPlayer.h */,
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
 		637C2E1E22CCAEBF00D18513 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				637C2E1F22CCAEBF00D18513 /* 0eadcb58644925cc3478541cac468995.mp3 */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		637C2E2A22CCF7B200D18513 /* HJPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E2B22CCF7B200D18513 /* Cache */,
+				637C2E3222CCF7B200D18513 /* Downloader */,
+				637C2E3722CCF7B200D18513 /* Models */,
+				637C2E3A22CCF7B200D18513 /* Manager */,
+				637C2E3F22CCF7B200D18513 /* HJUtils */,
+				637C2E4822CCF7B200D18513 /* Application */,
+				637C2E4B22CCF7B200D18513 /* Player */,
+			);
+			path = HJPlayer;
+			sourceTree = "<group>";
+		};
+		637C2E2B22CCF7B200D18513 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E2C22CCF7B200D18513 /* HJCacheConfig.h */,
+				637C2E2D22CCF7B200D18513 /* HJCache.m */,
+				637C2E2E22CCF7B200D18513 /* HJDiskCache.h */,
+				637C2E2F22CCF7B200D18513 /* HJCache.h */,
+				637C2E3022CCF7B200D18513 /* HJCacheConfig.m */,
+				637C2E3122CCF7B200D18513 /* HJDiskCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		637C2E3222CCF7B200D18513 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E3322CCF7B200D18513 /* HJPlayerDownloader.h */,
+				637C2E3422CCF7B200D18513 /* HJPlayerDownloaderOperation.m */,
+				637C2E3522CCF7B200D18513 /* HJPlayerDownloader.m */,
+				637C2E3622CCF7B200D18513 /* HJPlayerDownloaderOperation.h */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		637C2E3722CCF7B200D18513 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E3822CCF7B200D18513 /* HJPlayerModel.m */,
+				637C2E3922CCF7B200D18513 /* HJPlayerModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		637C2E3A22CCF7B200D18513 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E3B22CCF7B200D18513 /* HJAudioPlayerManager.h */,
+				637C2E3C22CCF7B200D18513 /* HJDataCapture.m */,
+				637C2E3D22CCF7B200D18513 /* HJAudioPlayerManager.m */,
+				637C2E3E22CCF7B200D18513 /* HJDataCapture.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		637C2E3F22CCF7B200D18513 /* HJUtils */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E4022CCF7B200D18513 /* HJDebugLog.h */,
+				637C2E4122CCF7B200D18513 /* HJInternalMacors.m */,
+				637C2E4222CCF7B200D18513 /* HJPlayerCompat.h */,
+				637C2E4322CCF7B200D18513 /* HJPlayerError.h */,
+				637C2E4422CCF7B200D18513 /* HJPlayerCompat.m */,
+				637C2E4522CCF7B200D18513 /* HJInternalMacors.h */,
+				637C2E4622CCF7B200D18513 /* HJPlayerError.m */,
+				637C2E4722CCF7B200D18513 /* HJPlayerOperation.h */,
+			);
+			path = HJUtils;
+			sourceTree = "<group>";
+		};
+		637C2E4822CCF7B200D18513 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E4922CCF7B200D18513 /* HJApplication.m */,
+				637C2E4A22CCF7B200D18513 /* HJApplication.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		637C2E4B22CCF7B200D18513 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				637C2E4C22CCF7B200D18513 /* HJPlayer.h */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,22 +370,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637C2E4F22CCF7B200D18513 /* HJDiskCache.m in Sources */,
 				637C2DCB22CCAE2400D18513 /* ViewController.m in Sources */,
-				637C2E0E22CCAE3700D18513 /* HJCacheConfig.m in Sources */,
-				637C2E1422CCAE3700D18513 /* HJAudioPlayerManager.m in Sources */,
-				637C2E1022CCAE3700D18513 /* HJPlayerDownloaderOperation.m in Sources */,
+				637C2E4D22CCF7B200D18513 /* HJCache.m in Sources */,
+				637C2E5522CCF7B200D18513 /* HJInternalMacors.m in Sources */,
+				637C2E4E22CCF7B200D18513 /* HJCacheConfig.m in Sources */,
 				637C2DD622CCAE2600D18513 /* main.m in Sources */,
-				637C2E1722CCAE3700D18513 /* HJPlayerError.m in Sources */,
-				637C2E1522CCAE3700D18513 /* HJInternalMacors.m in Sources */,
-				637C2E0D22CCAE3700D18513 /* HJCache.m in Sources */,
-				637C2E1822CCAE3700D18513 /* HJApplication.m in Sources */,
-				637C2E1122CCAE3700D18513 /* HJPlayerDownloader.m in Sources */,
-				637C2E1322CCAE3700D18513 /* HJDataCapture.m in Sources */,
-				637C2E1222CCAE3700D18513 /* HJPlayerModel.m in Sources */,
+				637C2E5622CCF7B200D18513 /* HJPlayerCompat.m in Sources */,
+				637C2E5322CCF7B200D18513 /* HJDataCapture.m in Sources */,
+				637C2E5722CCF7B200D18513 /* HJPlayerError.m in Sources */,
+				637C2E5222CCF7B200D18513 /* HJPlayerModel.m in Sources */,
+				637C2E5822CCF7B200D18513 /* HJApplication.m in Sources */,
 				637C2E1D22CCAE9100D18513 /* ListView.m in Sources */,
 				637C2DC822CCAE2400D18513 /* AppDelegate.m in Sources */,
-				637C2E0F22CCAE3700D18513 /* HJDiskCache.m in Sources */,
-				637C2E1622CCAE3700D18513 /* HJPlayerCompat.m in Sources */,
+				637C2E5422CCF7B200D18513 /* HJAudioPlayerManager.m in Sources */,
+				637C2E5022CCF7B200D18513 /* HJPlayerDownloaderOperation.m in Sources */,
+				637C2E5122CCF7B200D18513 /* HJPlayerDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
