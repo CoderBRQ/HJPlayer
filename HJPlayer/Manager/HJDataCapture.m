@@ -77,8 +77,8 @@ typedef NSMapTable<NSURLRequest *, id> HJLoadingRequestMapTable;
             default:
                 break;
         }
-    }dataApplyCompletion:^bool(const void *buffer, size_t size, BOOL finished) {
-        __block bool isApplying = NO;
+    }dataApplyCompletion:^bool(const void *buffer, size_t size, bool finished) {
+        __block bool isApplying = false;
         [self getLoadingRequestForRequest:originRequest
                         applyDataFinished:finished
                                    result:^(AVAssetResourceLoadingRequest *obj) {
