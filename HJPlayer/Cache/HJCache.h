@@ -26,7 +26,7 @@ typedef void(^HJPlayerNoParamsBlock)(void);
 typedef void(^HJPlayerCaculateCacheSizeBlock)(NSUInteger cacheSize, NSUInteger cacheCount);
 typedef void(^HJWriteDataCompletionBlock)(HJWriteDataStatus status);
 typedef void(^HJReadDataCompletionBlock)(HJReadDataStatus status);
-typedef BOOL(^HJDataApplyCompletionBlock)(const void *buffer, size_t size, BOOL finished);
+typedef BOOL(^HJDataApplyCompletionBlock)(const void *buffer, size_t size, bool finished);
 
 @protocol HJCache <NSObject>
 
