@@ -25,7 +25,7 @@
             case UIEventSubtypeRemoteControlTogglePlayPause:
             {
                 //播放暂停切换键：103
-                if (HJAudioPlayerManager.sharedManager.state == HJPlayerStatePausing) {
+                if (HJAudioPlayerManager.sharedManager.status == HJPlayerStatusPausing) {
                     [HJAudioPlayerManager.sharedManager hj_restart];
                 }else{
                     [HJAudioPlayerManager.sharedManager hj_pause];

@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *bufferSize;
 @property (weak, nonatomic) IBOutlet UILabel *playStatus;
 @property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playRateButton;
 
 @end
 

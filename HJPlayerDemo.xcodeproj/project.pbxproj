@@ -214,8 +214,8 @@
 		637C2E3722CCF7B200D18513 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				637C2E3822CCF7B200D18513 /* HJPlayerModel.m */,
 				637C2E3922CCF7B200D18513 /* HJPlayerModel.h */,
+				637C2E3822CCF7B200D18513 /* HJPlayerModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";

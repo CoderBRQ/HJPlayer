@@ -26,7 +26,7 @@ typedef void(^HJPlayerNoParamsBlock)(void);
 typedef void(^HJPlayerCaculateCacheSizeBlock)(NSUInteger cacheSize, NSUInteger cacheCount);
 typedef void(^HJWriteDataCompletionBlock)(HJWriteDataStatus status);
 typedef void(^HJReadDataCompletionBlock)(HJReadDataStatus status);
-typedef bool(^HJDataApplyCompletionBlock)(const void *buffer, size_t size, bool finished);
+typedef bool(^HJDataApplyCompletionBlock)(const void * _Nullable buffer, size_t size, bool finished);
 
 @protocol HJCache <NSObject>
 
@@ -55,13 +55,13 @@ typedef bool(^HJDataApplyCompletionBlock)(const void *buffer, size_t size, bool 
 #pragma mark - the operation of file length in plist file
 - (NSUInteger)queryFileLengthInLocalPlistFileWithURL:(nonnull NSURL *)url;
 
-- (void)queryFileLengthInLocalPlistFileWithURL:(nonnull NSURL *)url completed:(void(^)(NSUInteger fileLength))completedBlock;
+- (void)queryFileLengthInLocalPlistFileWithURL:(nonnull NSURL *)url completed:(void(^_Nullable)(NSUInteger fileLength))completedBlock;
 
 - (void)saveFileLengthToLocalPlistWithURL:(nonnull NSURL *)url fileLength:(NSUInteger)length;
 
-- (NSArray<NSNumber *> *)queryDownloadFileRangeInLocalPlistWithURL:(nonnull NSURL *)url loadingRequestRange:(NSArray<NSNumber *> *)loadingRequestRange;
+- (NSArray<NSNumber *> *_Nullable)queryDownloadFileRangeInLocalPlistWithURL:(nonnull NSURL *)url loadingRequestRange:(NSArray<NSNumber *> *_Nullable)loadingRequestRange;
 
-- (void)updateDownloadFileRangeInLocalPlistWithURL:(nonnull NSURL *)url responseRange:(NSArray<NSNumber *> *)responseRange;
+- (void)updateDownloadFileRangeInLocalPlistWithURL:(nonnull NSURL *)url responseRange:(NSArray<NSNumber *> *_Nullable)responseRange;
 
 #pragma mark - Cache Info
 
@@ -83,7 +83,7 @@ typedef bool(^HJDataApplyCompletionBlock)(const void *buffer, size_t size, bool 
 /**
  *  Asynchronously get the size of data in the disk cache.
  */
-- (void)fileSizeWithFileURL:(nullable NSURL *)url completed:(void(^)(size_t size))completedBlock;
+- (void)fileSizeWithFileURL:(nullable NSURL *)url completed:(void(^_Nullable)(size_t size))completedBlock;
 
 - (nullable NSString *)filePathWithFileURL:(nullable NSURL *)url;
 

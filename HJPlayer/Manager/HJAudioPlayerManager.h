@@ -13,15 +13,15 @@
 /**
  播放器状态
  */
-typedef NS_ENUM(NSInteger, HJPlayerState) {
+typedef NS_ENUM(NSInteger, HJPlayerStatus) {
     HJPlayerStatusUnknown = 1,                // 未知错误，播放失败
     HJPlayerStatusFailed = 2,                 // 有错误，播放失败
-    HJPlayerStatePlaybackBufferEmpty = 3,     // 缓冲为空，正在缓冲。。（转菊花）
-    HJPlayerStatePlaybackLikelyToKeepUp = 4,  // 可以播放（是时候取消菊花了）
-    HJPlayerStatePausing = 5,                 // 暂停中
-    HJPlayerStateStoped = 6,                  // 结束播放
-    HJPlayerStateFinished = 7,                // 播放完成
-    HJPlayerStatePlaying = 8
+    HJPlayerStatusPlaybackBufferEmpty = 3,     // 缓冲为空，正在缓冲。。（转菊花）
+    HJPlayerStatusPlaybackLikelyToKeepUp = 4,  // 可以播放（是时候取消菊花了）
+    HJPlayerStatusPausing = 5,                 // 暂停中
+    HJPlayerStatusStoped = 6,                  // 结束播放
+    HJPlayerStatusFinished = 7,                // 播放完成
+    HJPlayerStatusPlaying = 8                  // 正在播放
 };
 
 typedef NS_ENUM(NSInteger, HJPlayerType) {
@@ -32,8 +32,8 @@ typedef NS_ENUM(NSInteger, HJPlayerType) {
 
 @protocol HJPlayerDataSource <NSObject>
 
-- (NSArray<HJPlayerNowPlayingCenterModel *> *)hj_audioInfos;
-- (NSArray<HJPlayerModel *> *)hj_audios;
+- (NSArray<HJPlayerNowPlayingCenterModel *> *_Nullable)hj_audioInfos;
+- (NSArray<HJPlayerModel *> *_Nullable)hj_audios;
 @end
 
 
@@ -43,9 +43,15 @@ typedef NS_ENUM(NSInteger, HJPlayerType) {
  Returns the global shared audio player manager instance. By default we will set into the array.
  */
 @property (nonatomic, class, readonly, nonnull) HJAudioPlayerManager *sharedManager;
-@property (nonatomic, weak) id <HJPlayerDataSource> dataSource;
+- (id _Nonnull )copy NS_UNAVAILABLE;
+- (id _Nonnull )mutableCopy NS_UNAVAILABLE;
++ (instancetype _Nonnull )new NS_UNAVAILABLE;
++(instancetype _Nonnull )alloc NS_UNAVAILABLE;
++(instancetype _Nonnull )allocWithZone:(struct _NSZone *_Nullable)zone NS_UNAVAILABLE;
 
-@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, weak) id <HJPlayerDataSource> _Nullable dataSource;
+
+@property (nonatomic, strong) AVPlayer * _Nullable player;
 
 /**
  Play an audio with an `url`.
@@ -136,5 +142,5 @@ typedef NS_ENUM(NSInteger, HJPlayerType) {
 @property (nonatomic, assign, readonly) NSTimeInterval totalBufferTime;
 
 /**播放器状态*/
-@property (nonatomic, assign, readonly) HJPlayerState state;
+@property (nonatomic, assign, readonly) HJPlayerStatus status;
 @end

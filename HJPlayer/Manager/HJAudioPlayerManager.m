@@ -25,8 +25,8 @@ static void *context = (void *)@"hj_context";
 @property (nonatomic, strong) NSURL *currentAudioURL;
 @property (nonatomic, copy) NSString *cachePath;
 @property (nonatomic, assign) HJPlayerType playType;
-
 @property (nonatomic, strong) dispatch_semaphore_t audioLock;
+@property (nonatomic, copy) NSString *userAgent;
 @end
 
 @implementation HJAudioPlayerManager
@@ -47,7 +47,7 @@ static void *context = (void *)@"hj_context";
 - (void)setPlayTime:(CGFloat)playTime {_playTime = playTime;}
 - (void)setPlayDuration:(CGFloat)playDuration {_playDuration = playDuration;}
 - (void)setTotalBufferTime:(NSTimeInterval)totalBufferTime {_totalBufferTime = totalBufferTime;}
-- (void)setState:(HJPlayerState)state {_state = state;}
+- (void)setStatus:(HJPlayerStatus)status {_status = status;}
 - (void)setRate:(CGFloat)rate {
     _rate = rate;
     if (rate != 1) {
@@ -61,13 +61,9 @@ static void *context = (void *)@"hj_context";
     static HJAudioPlayerManager *_manager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _manager = [[super allocWithZone:NULL] init];
+        _manager = [[super alloc] init];
     });
     return _manager;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone {
-    return [HJAudioPlayerManager sharedManager];
 }
 
 - (instancetype)init {
@@ -88,6 +84,23 @@ static void *context = (void *)@"hj_context";
         // 播放速度
         self.rate = 1.0;
         self.audioLock = dispatch_semaphore_create(1);
+        
+        // User-Agent Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43
+        NSString *userAgent = [NSString stringWithFormat:@"%@/%@ (%@; iOS %@; Scale/%0.2f)",
+                               [[NSBundle mainBundle] infoDictionary][(__bridge NSString *)kCFBundleExecutableKey] ?: [[NSBundle mainBundle] infoDictionary][(__bridge NSString *)kCFBundleIdentifierKey],
+                               [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"] ?: [[NSBundle mainBundle] infoDictionary][(__bridge NSString *)kCFBundleVersionKey],
+                               [[UIDevice currentDevice] model],
+                               [[UIDevice currentDevice] systemVersion],
+                               [[UIScreen mainScreen] scale]];
+        if (userAgent) {
+            if (![userAgent canBeConvertedToEncoding:NSASCIIStringEncoding]) {
+                NSMutableString *mutableUserAgent = [userAgent mutableCopy];
+                if (CFStringTransform((__bridge CFMutableStringRef)(mutableUserAgent), NULL, (__bridge CFStringRef)@"Any-Latin; Latin-ASCII; [:^ASCII:] Remove", false)) {
+                    userAgent = mutableUserAgent;
+                }
+            }
+            self.userAgent = userAgent;
+        }
     }
     return self;
 }
@@ -150,12 +163,12 @@ static void *context = (void *)@"hj_context";
 
 - (void)hj_play {
     [_player play];
-    self.state = HJPlayerStatePlaying;
+    self.status = HJPlayerStatusPlaying;
 }
 
 - (void)hj_pause {
     self.rate = 0;
-    self.state = HJPlayerStatePausing;
+    self.status = HJPlayerStatusPausing;
 }
 
 - (void)hj_last {
@@ -191,7 +204,7 @@ static void *context = (void *)@"hj_context";
     [self hj_seekToTimeWithPercent:0];
     [self currentItemRemoveObserver];
     _player = nil;
-    self.state = HJPlayerStateStoped;
+    self.status = HJPlayerStatusStoped;
 }
 
 - (void)hj_reloadData {
@@ -213,6 +226,9 @@ static void *context = (void *)@"hj_context";
     NSString *range=[NSString stringWithFormat:@"bytes=%lld-%lld",requestedOffset,requestedOffset + requestedLength - 1];
     [mutableRequest setValue:range forHTTPHeaderField:@"Range"];
     [mutableRequest setValue:@"identity" forHTTPHeaderField:@"Accept-Encoding"];
+    
+    mutableRequest.allHTTPHeaderFields = @{@"User-Agent" : self.userAgent};
+    
     NSURLRequest * originRequest = [mutableRequest copy];
     
     size_t size = [HJCache.sharedCache fileSizeWithFileURL:self.currentAudioURL];
@@ -391,7 +407,7 @@ static void *context = (void *)@"hj_context";
 
 
 - (void)playbackFinished:(NSNotification *)notifi {
-    self.state = HJPlayerStateFinished;
+    self.status = HJPlayerStatusFinished;
     [self hj_stop];
 }
 
@@ -403,27 +419,16 @@ static void *context = (void *)@"hj_context";
         AVPlayerStatus status = [change[@"new"] integerValue];
         switch (status) {
             case AVPlayerStatusUnknown:
-                self.state = HJPlayerStatusUnknown;
+                self.status = HJPlayerStatusUnknown;
                 break;
             case AVPlayerStatusReadyToPlay:
             {
+                self.status = HJPlayerStatusPlaying;
                 [_player play];
             }
                 break;
             case AVPlayerStatusFailed:
-                
-            //                if (@available(iOS 10.0, *)) {
-            //
-            //
-            //                    if (self.player.reasonForWaitingToPlay == AVPlayerWaitingWithNoItemToPlayReason || self.player.timeControlStatus == AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate) {
-            ////                        [self hj_internalPlay];
-            //                    }else if (self.player){
-            //                         self.state = HJPlayerStatusFailed;
-            ////                         [self hj_internalPlay];
-            //                    }
-            //                }else {
-            //                    self.state = HJPlayerStatusFailed;
-            //                }
+                self.status = HJPlayerStatusFailed;
                 break;
             default:
                 break;
@@ -436,10 +441,10 @@ static void *context = (void *)@"hj_context";
         self.totalBufferTime = totalBufferTime;
         [self updateConfigNowPlayingCenter];
     }else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {//seekToTime后,可以正常播放，相当于readyToPlay，一般拖动滑竿菊花转，到了这个这个状态菊花隐藏
-        self.state = HJPlayerStatePlaybackLikelyToKeepUp;
+        self.status = HJPlayerStatusPlaybackLikelyToKeepUp;
         [_player play];
     }else if ([keyPath isEqualToString:@"playbackBufferEmpty"]) {// seekToTime后，缓冲数据为空，而且有效时间内数据无法补充，播放失败；最开始播放时，如果没有缓存也会调用一次
-        self.state = HJPlayerStatePlaybackBufferEmpty;
+        self.status = HJPlayerStatusPlaybackBufferEmpty;
     }
 }
 

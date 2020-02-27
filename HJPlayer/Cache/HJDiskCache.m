@@ -167,7 +167,7 @@
     }
     NSString *filePath = [self cachePathForKey:key inPath:_diskCachePath];
     
-//    NSLog(@"%@", filePath);
+    NSLog(@"%@", filePath);
     
     if  (![self.fileManager fileExistsAtPath:filePath]) {
         return nil;

@@ -59,7 +59,7 @@
         _downloadQueue.maxConcurrentOperationCount = 1;
     }
     NSURLSession *session = [NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration];
-    HJPlayerDownloaderOperation<HJPlayerDownloaderOperation> *operation;
+    NSOperation<HJPlayerDownloaderOperation> *operation;
     operation = [[HJPlayerDownloaderOperation alloc]
                  initWithRequest:request
                  inSession:session
